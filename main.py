@@ -1,3 +1,5 @@
+import operator
+
 # ==================================================================
 # ============================= DATA IN ============================
 # ==================================================================
@@ -68,7 +70,7 @@ def ErrorType(liste):
         else:
             print("Erreur: un des éléments n'est pas un nombre ou un opérateur.")
             return 0
-    return ErrorOperandeOperateur(liste, ComptOperande, ComptOperateur)
+    return ErrorOperandeOperateur(ComptOperande, ComptOperateur)
 
 
 def ErrorSizeStart(liste):
