@@ -39,7 +39,7 @@ def ErrorSizeStart(liste):
         return 0
     return 1
 
-def ErrorOperandeOperateur(liste, ComptOperande, ComptOperateur):
+def ErrorOperandeOperateur(ComptOperande, ComptOperateur):
     if ComptOperande != ComptOperateur + 1:
         print("Erreur: le nombre d'opérandes et d'opérateurs ne correspond pas.")
         return 0
