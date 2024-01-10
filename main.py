@@ -55,11 +55,12 @@ def IsOperator(element):
     return False
 
 def DoCalcul(liste):
+    ops = {"+": operator.add, "-": operator.sub, "*": operator.mul, "/": operator.truediv}
     while len(liste) > 1:
         for element in liste:
             if IsOperator(element):
                 index = liste.index(element)
-                resultat = eval(liste[index - 2] + element + liste[index - 1])
+                resultat = ops[element](int(liste[index - 2]), int(liste[index - 1]))
                 liste[index - 2] = str(resultat)
                 del liste[index - 1]
                 del liste[index - 1]
