@@ -1,3 +1,8 @@
+"""
+    Modules:
+    - operator : fournit des fonctions permettant d'effectuer des opérations standard du langage
+    sous forme de fonctions.
+"""
 import operator
 
 # ==================================================================
